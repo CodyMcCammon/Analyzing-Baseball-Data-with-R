@@ -1,0 +1,111 @@
+# Exercises 1.8
+
+1.) (Which datafile?)
+
+This chapter has given an overview of the Lahman database, the Retrosheet game logs, the Retrosheet  play-by-play files, and the PITCHf/x database. Describe the relevant data among these four databases that can be used to answer the following baseball questions.
+
+a.) How has the rate of walks (per team for nine  innings) changed over the history of baseball? 
+6t
+b.) What fraction of baseball games in 1968 were shutouts? Compare this fraction with the fraction of cshutouts in the 2012 baseball season.
+
+c.) What percentage of first pitches are strikes? If the count is 2-0, what fraction of the pitches are strikes?
+
+d.) Is it easier to steal second base or third base? (Compare the fraction of successful steals of second base with the fraction of successful steals of third base.)
+
+___
+
+2.) (Lahman Pitching Data)
+
+From the pitching dat file from the Lahman database, the folowing information is collected about Bob Gibson's famous 1968 season.
+
+playerID yearID stint teamID lgID W L G GS CG SHO SV IPouts
+gibsobo01 1968 1 SLN NL 22 9 34 34 28 13 0 914
+H ER HR BB SO BAOpp ERA IBB WP HBP BK BFP GF R SH SF GIDP
+198 38 11 62 268 0.18 1.12 6 4 7 0 1161 0 49 NA NA NA
+
+a.) Gibson started 34 games for the Cardinals in 1968. What fraction of these games were completed by Gibson?
+
+b.) What was Gibson's ratio of strikeouts to walks this season?
+
+c.) One can compute Gibson's innings pitched by dividing IPouts by three. How many innings did Gibson pitch this season?
+
+d.) A modern measure of pitching effectiveness is WHIP, the average number of hits and walks allowed per inning. What was Gibson's WHIP for the 1968 season?
+
+___
+
+3.) (Retrosheet Game Log)
+
+Jim Bunning pitched a perfect game on Father’s Day on June 21, 1964.
+Some details about this particular game can be found from the Retrosheet
+game logs.
+
+date day visitorteam visitorleague visitorgame hometeam
+19640621 Sun PHI NL 60 NYN
+homeleague homegame visitorscore homescore lengthgame daynight
+NL 67 6 0 54 D
+completioninfo forfeitinfo protestinfo parkid attendance timegame
+NA NA NA NYC17 0 139
+visitorlinescore homelinescore visitorab visitorh visitor2b
+110004000 000000000 32 8 2
+visitor3b visitorhr visitorrbi visitorsh visitorsf visitorhbp
+0 1 6 2 0 0
+visitorbb visitoribb visitork visitorsb visitorcs visitorgdp
+4 0 6 0 1 0
+visitorci visitorlob
+0 5
+
+a.) What was the time in hours and minutes of this particular game?
+
+b.) Why is the attendance value in this record equal to zero?
+
+c.) How many extra base hits did the Phillies have in this game? (We
+know that the Mets had no extra base hits this game.)
+
+d.) What was the Phillies’ on-base percentage in this game?
+
+___
+
+4.) (Retrosheet Play-by-Play Record)
+
+One of the famous plays in Philadelphia Phillies baseball history is second-
+baseman Mickey Morandini’s unassisted triple play against the Pirates
+on September 20, 1992.15 The following records from the Retrosheet
+play-by-play database describe this half-inning. The variables indicate
+the half-inning (variables INN CT and HOME ID), the current score (vari-
+ables AWAY SCORE CT and HOME SCORE CT), the identities of the pitcher
+and batter (variables BAT ID and PIT ID), the pitch sequence (variable
+PITCH SEQ), the play event description (variable EVENT TEX), and the run-
+ners on base (variables BASE1 RUN and BASE2 ID).
+
+INN_CT BAT_HOME_ID AWAY_SCORE_CT HOME_SCORE_CT BAT_ID PIT_ID
+6 1 1 1 vansa001 schic002
+6 1 1 1 bondb001 schic002
+6 1 1 1 kingj001 schic002
+PITCH_SEQ_TX EVENT_CD EVENT_TX BASE1_RUN_ID BASE2_RUN_ID
+CBBBX 20 S9/L9M
+C1BX 20 S/G56.1-2 vansa001
+BLLBBX 2 4(B)4(2)4(1)/LTP/L4M bondb001 vansa001
+
+Based on the records, write a short paragraph that describes the play-by-
+play events of this particular inning.
+
+___
+
+5. (PITCHf/x Record of Several Pitches)
+
+R. A. Dickey is one of the current pitchers who predominantly throws
+a knuckleball. The following gives some PITCHf/x variables for the first
+knuckleball and the first fastball that Dickey threw for a game against the
+Kansas City Royals on April 13, 2013.
+
+
+start_speed end_speed pfx_x pfx_z px pz sz_bot sz_top
+73 66.3 -0.64 -7.58 -0.047 2.475 1.5 3.35
+start_speed end_speed pfx_x pfx_z px pz sz_bot sz_top
+81.2 75.4 -4.99 -7.67 -1.99 2.963 1.5 3.43
+
+
+Describe the differences between the knuckleball and the fastball in terms
+of pitch speed, movement (horizontal and vertical directions), and location
+in the strike zone. Based on this data, why is a knuckleball so difficult for
+a batter to make contact?
